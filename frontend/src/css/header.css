@@ -1,0 +1,79 @@
+
+header {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+
+svg#logo-animation {
+    animation: wheel 3s linear infinite;
+    transform-origin: center center;
+    transform-box: fill-box;
+	width: 50px;
+	height: 50px;
+	
+    /* opacity: 0; */
+}
+/* Animation Wheels */
+@-webkit-keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes wheel {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+text {
+	font-size: 260px;
+}
+svg#text-animation{
+	font-family: 'Russo One', sans-serif;
+    width: 300px;
+    height: 100px;
+	/* position: absolute; 
+	width: 100%; height: 100%; */
+}
+svg#text-animation {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: white;
+	font-size: 140px;
+}
+@keyframes stroke {
+	0%   {
+		fill: white; stroke: white;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgb(0, 0, 255); stroke: white; }
+	80%  {fill: rgb(0, 0, 255); stroke: white; stroke-width: 3; }
+	100% {
+		fill: white; stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}

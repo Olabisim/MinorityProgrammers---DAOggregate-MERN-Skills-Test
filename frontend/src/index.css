@@ -1,0 +1,22 @@
+main {
+    min-height: 80vh;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+.rating span{
+    margin: 0.05rem;
+}
+
+svg {
+    height: 25px;
+    width: 25px;
+}
+button {
+    width: 120px !important;
+}
+body {
+    background: blue;
+}
