@@ -5,3 +5,7 @@ Haven't included company type and num of numbers to the enumeration i.e enum
 i used which i already know it is used for big applications 
 
 The governaneTokenAddress was spelt governanceTokenAdress
+
+
+https://dao-ggregate.vercel.app/
+https://discord.com/invite/FCfyBSbCU5

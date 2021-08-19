@@ -10,8 +10,8 @@ svg#logo-animation {
     animation: wheel 3s linear infinite;
     transform-origin: center center;
     transform-box: fill-box;
-	width: 50px;
-	height: 50px;
+	width: 37px;
+	height: 37px;
 	
     /* opacity: 0; */
 }
@@ -49,11 +49,11 @@ svg#logo-animation {
     }
 }
 text {
-	font-size: 260px;
+	font-size: 270px;
 }
 svg#text-animation{
 	font-family: 'Russo One', sans-serif;
-    width: 300px;
+    width: 200px;
     height: 100px;
 	/* position: absolute; 
 	width: 100%; height: 100%; */
