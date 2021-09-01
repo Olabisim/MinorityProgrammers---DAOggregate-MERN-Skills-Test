@@ -11,9 +11,6 @@ const reducer = combineReducers({
     dataDetails: dataDetailsReducer,
 });
 
-// you put things in the initial state if you want something to load
-// when the redux-thunk loads
-
 const initialState = {};
 
 const middleware = [thunk];

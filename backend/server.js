@@ -7,7 +7,6 @@ import dataRoutes from './routes/dataRoutes.js'
 import path from 'path'
 
 
-
 const app = express();
 
 dotenv.config()

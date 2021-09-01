@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Header from "./components/Header";
@@ -12,16 +12,14 @@ const App = () => {
             <Header />
             <div id="particles">
 
-                <div class="overlay"></div>
+                <div className="overlay"></div>
                 <div id="intro"></div>
 
             </div>
             <main className="py-3">
                 <Container>
-                    {/* <HomeScreen /> */}
                     <Route path='/' component={HomeScreen} exact/>
 
-                    {/* the :id is gotten from the product.js component */}
 
                     <Route path='/dao/:id' component={DAOScreen} />
                 </Container>

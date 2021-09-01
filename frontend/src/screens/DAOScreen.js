@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
-import Rating from "../components/Rating";
+// import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import { listDataDetails } from "../actions/dataActions";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import '../css/card_design.css';
 import '../css/go_back.css';
 
-// const {match } = props
+// const {match } = props className=
 
 const DAOScreen = ({ match }) => {
 
@@ -27,18 +26,18 @@ const DAOScreen = ({ match }) => {
 
     return (
         <>
-            <div class="back-button">
-                <div class="arrow-wrap">
-                    <span class="arrow-part-1"></span>
-                    <span class="arrow-part-2"></span>
-                    <span class="arrow-part-3"></span>
+            <div className="back-button">
+                <div className="arrow-wrap">
+                    <span className="arrow-part-1"></span>
+                    <span className="arrow-part-2"></span>
+                    <span className="arrow-part-3"></span>
                 </div>
             </div>
-            <section class="content yobject-marked">
+            <section className="content yobject-marked">
 				
-				<div class="box bg-2">
-					<button class="button button--naira button--border-thick button--text-thick button--text-upper button--size-s">
-                        <i class="button__icon icon icon-download"></i>
+				<div className="box bg-2">
+					<button className="button button--naira button--border-thick button--text-thick button--text-upper button--size-s">
+                        <i className="button__icon icon icon-download"></i>
                         <span>GO BACK</span>
 					  
 					</button>
@@ -58,8 +57,8 @@ const DAOScreen = ({ match }) => {
                       
                             {/* <a href={`/api/datas/${data._id}`} alt="" > */}
                                 
-                                    <div class="screen">
-                                        <div class="content">
+                                    <div className="screen">
+                                        <div className="content">
                                             
                                             <h2><a href={`/api/datas/${data._id}`} alt="" >{data.Name}</a></h2>
                                             <h2><a href={`/api/datas/${data._id}`} alt="" >{data.Category}</a></h2>
@@ -96,13 +95,13 @@ const DAOScreen = ({ match }) => {
                             
                                         
                     
-                        <div class="screen">
-                            <div class="content">
+                        <div className="screen">
+                            <div className="content">
                                 <h2>New York</h2>
                             </div>
                         </div>
-                        <div class="screen">
-                            <div class="content">
+                        <div className="screen">
+                            <div className="content">
                                 <h2>New York</h2>
                             </div>
                         </div>
