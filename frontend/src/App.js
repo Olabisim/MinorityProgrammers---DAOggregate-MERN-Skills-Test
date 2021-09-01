@@ -4,22 +4,17 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
+import DAOScreen from "./screens/DAOScreen";
 
 const App = () => {
     return (
         <Router>
             <Header />
             <div id="particles">
-            <div class="overlay"></div>
-            <div id="intro">
 
+                <div class="overlay"></div>
+                <div id="intro"></div>
 
-                {/* <h1>3D Animated<br />background</h1>
-                <p>Background particle systems</p> */}
-
-
-            </div>
             </div>
             <main className="py-3">
                 <Container>
@@ -28,7 +23,7 @@ const App = () => {
 
                     {/* the :id is gotten from the product.js component */}
 
-                    <Route path='/product/:id' component={ProductScreen} />
+                    <Route path='/dao/:id' component={DAOScreen} />
                 </Container>
             </main>
 

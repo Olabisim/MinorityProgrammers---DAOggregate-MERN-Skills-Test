@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
 } */
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&display=swap');
 
 .flex-container {
@@ -114,15 +114,53 @@ table tr:nth-of-type(1) {
   border-top: 3px solid white;
   border-bottom: 3px solid white;
 
+}
+
+table tr:nth-of-type(1):hover { 
+
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  background: none;color: white;
 
 }
 
 table tr { 
 
-  border-top: 1px solid #a6a6a6;
-  border-bottom: 1px solid #a6a6a6;
+  /* border-top: 1px dotted white; */
+  border-bottom: 1px outset white;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: 0.5s;
+  transition-delay: 0.05s;
+
+}
+
+table tr:hover { 
+
+  background: white;
+  color: blue;
+  margin: 20px;
+  padding: 10px;
+  /* text-align: center; */
+
+}
+
+table tr:hover a { 
+
+  color: blue;
+  font-weight: 900;
+
+}
+
+table tr:hover svg { 
+
+  color: blue;
+
+}
+
+table tr:hover td{ 
+
+  /* border: 2px solid blue; */
 
 }
 
@@ -139,3 +177,49 @@ table tr th {
   font-weight: 900;
 
 }
+button {
+  background: white;
+  color: blue;
+}
+
+.inner_navs {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.inner_navs button{
+  /* margin-bottom: 20px;
+  width: 100%; */
+  border: none;
+  padding: 15px 5px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+  /* font-size: 22px; */
+
+}
+
+.inner_navs button:hover{
+
+  background: blue;
+  color: white;
+  border: 1px solid white !important;
+
+}
+
+.active_button {
+  
+  background: blue;
+  border: 1px solid white !important;
+  color: white;
+}
+
+.svg_hover_fix:hover {
+  color: blue;
+}
+
+
+
+
+

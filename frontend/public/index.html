@@ -487,6 +487,27 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
     </script> 
+
+    <script>
+      var audio = new Audio('https://a.clyp.it/dumevvze.mp3');
+      audio.volume = 0.1;
+      audio.play();
+
+      $('.trigger').click(function() {
+        if (audio.paused == false) {
+            audio.pause();
+            $('.fa-play').show();
+            $('.fa-pause').hide();
+            $('.music-card').removeClass('playing');
+        } else {
+            audio.play();
+            $('.fa-pause').show();
+            $('.fa-play').hide();
+            $('.music-card').addClass('playing');
+        }
+      });
+
+      </script>
    
   </body>
 </html>

@@ -20,3 +20,8 @@ button {
 body {
     background: blue;
 }
+
+a {
+    color:white;
+    text-decoration: none;
+}
