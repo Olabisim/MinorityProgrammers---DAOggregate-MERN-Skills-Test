@@ -103,80 +103,6 @@
   top:20px;
   font-family: 'Maven Pro', sans-serif;
 }
-table {
-  color: white;
-  margin: 10px;
-  padding: 10px;
-}
-
-table tr:nth-of-type(1) { 
-
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-
-}
-
-table tr:nth-of-type(1):hover { 
-
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-  background: none;color: white;
-
-}
-
-table tr { 
-
-  /* border-top: 1px dotted white; */
-  border-bottom: 1px outset white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: 0.5s;
-  transition-delay: 0.05s;
-
-}
-
-table tr:hover { 
-
-  background: white;
-  color: blue;
-  margin: 20px;
-  padding: 10px;
-  /* text-align: center; */
-
-}
-
-table tr:hover a { 
-
-  color: blue;
-  font-weight: 900;
-
-}
-
-table tr:hover svg { 
-
-  color: blue;
-
-}
-
-table tr:hover td{ 
-
-  /* border: 2px solid blue; */
-
-}
-
-table tr td { 
-
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-table tr th { 
-
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-weight: 900;
-
-}
 button {
   background: white;
   color: blue;
@@ -188,11 +114,13 @@ button {
 }
 
 .inner_navs button{
-  /* margin-bottom: 20px;
-  width: 100%; */
+  margin-bottom: 20px;
+  width: 100%;
+  margin:auto;
   border: none;
   padding: 15px 5px;
   font-family: 'Lobster', cursive;
+
   letter-spacing: 1px;
   transition: 0.5s;
   transition-delay: 0.1s;
@@ -219,7 +147,87 @@ button {
   color: blue;
 }
 
+.filter-block {
+  display: inline;
+}
 
 
 
+
+
+/* 
+****************************
+media queries for phone 
+****************************
+*/
+
+
+
+
+@media screen and (max-width: 920px) { 
+  
+  .filter-block {
+    display: inline;
+  }
+
+}
+
+@media screen and (max-width: 768px)  {
+  
+  .filter-block {
+    display: inline;
+  }
+  
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+  /* .inner_navs {
+    width: 80%;
+  } */
+
+
+}
 

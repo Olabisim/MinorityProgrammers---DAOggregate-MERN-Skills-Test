@@ -7,6 +7,7 @@ import Loader from "../components/Loader";
 import Table from "../components/Table";
 import { listDatas } from "../actions/dataActions";
 import '../css/two_divs.css';
+import '../css/table.css';
 
 
 
@@ -141,19 +142,31 @@ const HomeScreen = () => {
 
                         <div className="inner_navs">
 
-                            {/* <div className="active_button" onClick={() => setActive(!active)}> */}
-                                <button type="button" className={toggleValue == '' && "active_button"} onClick={() => setToggleValue('')} >All</button>
-                            {/* </div> */}
                             
-                            <button type="button" className={toggleValue == 'Protocol' && "active_button"} onClick={() => setToggleValue('Protocol')} >Protocol</button>
-                            <button type="button" className={toggleValue == 'Service' && "active_button"} onClick={() => setToggleValue('Service')} >Service</button>
-                            <button type="button" className={toggleValue == 'Grant' && "active_button"} onClick={() => setToggleValue('Grant')} >Grant</button>
-                            <button type="button" className={toggleValue == 'Media' && "active_button"} onClick={() => setToggleValue('Media')} >Media</button>
-                            <button type="button" className={toggleValue == 'Social' && "active_button"} onClick={() => setToggleValue('Social')} >Social</button>
-                            <button type="button" className={toggleValue == 'Investment' && "active_button"} onClick={() => setToggleValue('Investment')} >Investment</button>
-                            <button type="button" className={toggleValue == 'Platform' && "active_button"} onClick={() => setToggleValue('Platform')} >Platform</button>
-                            <button type="button" className={toggleValue == 'Collector' && "active_button"} onClick={() => setToggleValue('Collector')} >Collector</button>
+                            
+                            <div className="filter-block">
+
+                                <button type="button" className={toggleValue == '' && "active_button"} onClick={() => setToggleValue('')} >All</button>
+                                <button type="button" className={toggleValue == 'Protocol' && "active_button"} onClick={() => setToggleValue('Protocol')} >Protocol</button>
+                                <button type="button" className={toggleValue == 'Service' && "active_button"} onClick={() => setToggleValue('Service')} >Service</button>
+
+                            </div>
+
+                            <div className="filter-block">
+
+                                <button type="button" className={toggleValue == 'Grant' && "active_button"} onClick={() => setToggleValue('Grant')} >Grant</button>
+                                <button type="button" className={toggleValue == 'Media' && "active_button"} onClick={() => setToggleValue('Media')} >Media</button>
+                                <button type="button" className={toggleValue == 'Social' && "active_button"} onClick={() => setToggleValue('Social')} >Social</button>
+
+                            </div>
+
+                            <div className="filter-block">
+
+                                <button type="button" className={toggleValue == 'Investment' && "active_button"} onClick={() => setToggleValue('Investment')} >Investment</button>
+                                <button type="button" className={toggleValue == 'Platform' && "active_button"} onClick={() => setToggleValue('Platform')} >Platform</button>
+                                <button type="button" className={toggleValue == 'Collector' && "active_button"} onClick={() => setToggleValue('Collector')} >Collector</button>
                         
+                            </div>
                         </div>
 
 
