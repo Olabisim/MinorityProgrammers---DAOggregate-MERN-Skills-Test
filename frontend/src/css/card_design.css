@@ -15,13 +15,13 @@
     transition: all 0.50s;
   }
   
-  .screen:hover {
+  /* .screen:hover {
     background: linear-gradient(to bottom, 
                 rgba(255,255,255,0.8) 100%, 
                 rgba(255,255,255,0) 50%, 
                 rgba(255,255,255,0.8) 100%);
     transform: scale(1.3);
-  }
+  } */
   .screen h2 {
     color: #fff;
     font-weight: 300;

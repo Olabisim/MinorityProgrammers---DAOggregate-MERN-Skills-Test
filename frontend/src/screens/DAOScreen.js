@@ -7,6 +7,7 @@ import { listDataDetails } from "../actions/dataActions";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import '../css/card_design.css';
+import '../css/go_back.css';
 
 // const {match } = props
 
@@ -26,7 +27,25 @@ const DAOScreen = ({ match }) => {
 
     return (
         <>
+            <div class="back-button">
+                <div class="arrow-wrap">
+                    <span class="arrow-part-1"></span>
+                    <span class="arrow-part-2"></span>
+                    <span class="arrow-part-3"></span>
+                </div>
+            </div>
+            <section class="content yobject-marked">
+				
+				<div class="box bg-2">
+					<button class="button button--naira button--border-thick button--text-thick button--text-upper button--size-s">
+                        <i class="button__icon icon icon-download"></i>
+                        <span>GO BACK</span>
+					  
+					</button>
+				</div>
+			</section>
             <Link className="btn my-3" to="/">
+                
                 Go Back
             </Link>
             {loading ? (
@@ -36,9 +55,9 @@ const DAOScreen = ({ match }) => {
             ) : (
                 <>
                     
-                      <tr>
+                      
                             {/* <a href={`/api/datas/${data._id}`} alt="" > */}
-                                <td>
+                                
                                     <div class="screen">
                                         <div class="content">
                                             
@@ -47,27 +66,26 @@ const DAOScreen = ({ match }) => {
                                             
                                         </div>
                                     </div>
-                                </td>
-
-                                <td><a href={`/api/datas/${data._id}`} alt="" >{data.Category}</a></td>
-
-                                <td><a href={`/api/datas/${data._id}`} alt="" >${data.AUM}</a></td>
-
-                                <td><a href={`/api/datas/${data._id}`} alt="" >{data.Followers}</a></td>
-
-                                <td><a href={`/api/datas/${data._id}`} alt="" >{data.Founded}</a></td>
-                            {/* </a> */}
-                            <td >
                                 
+
+                                <a href={`/api/datas/${data._id}`} alt="" >{data.Category}</a>
+
+                                <a href={`/api/datas/${data._id}`} alt="" >${data.AUM}</a>
+
+                                <a href={`/api/datas/${data._id}`} alt="" >{data.Followers}</a>
+
+                                <a href={`/api/datas/${data._id}`} alt="" >{data.Founded}</a>
+                            {/* </a> */}
+                                                            
                                 <a href={data.Website} target="_blank" rel="noreferrer" alt="twitter" style={{width: '30px', height: '100px', color: "white"}}>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 hover:text-yellow-600">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
                                     </svg>
                                 </a>
 
-                            </td>
+                            
 
-                            <td>
+                            
 
                                 <a href={data.Twitter} target="_blank" rel="noreferrer" alt="twitter" style={{width: '30px', height: '100px'}}>
                                     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" className="svg-inline--fa fa-twitter fa-w-16 h-6 w-6 hover:text-yellow-600" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -75,9 +93,9 @@ const DAOScreen = ({ match }) => {
                                     </svg>
                                 </a>
                                 
-                            </td>
+                            
                                         
-                        </tr>
+                    
                         <div class="screen">
                             <div class="content">
                                 <h2>New York</h2>
