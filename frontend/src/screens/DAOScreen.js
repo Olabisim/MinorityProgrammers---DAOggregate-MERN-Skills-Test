@@ -26,37 +26,41 @@ const DAOScreen = ({ match }) => {
 
     return (
         <>
-            <div className="back-button">
+            {/* <div className="back-button">
                 <div className="arrow-wrap">
                     <span className="arrow-part-1"></span>
                     <span className="arrow-part-2"></span>
                     <span className="arrow-part-3"></span>
                 </div>
-            </div>
-            <section className="content yobject-marked">
-				
-				<div className="box bg-2">
-					<button className="button button--naira button--border-thick button--text-thick button--text-upper button--size-s">
-                        <i className="button__icon icon icon-download"></i>
-                        <span>GO BACK</span>
-					  
-					</button>
-				</div>
-			</section>
-            <Link className="btn my-3" to="/">
+            </div> */}
+            
+            {/* <Link className="btn my-3" to="/">
                 
                 Go Back
-            </Link>
+            </Link> */}
             {loading ? (
                 <Loader />
             ) : error ? (
                 <Message variant="danger">{error}</Message>
             ) : (
                 <>
-                    
+                    <section className="content yobject-marked" style={{width: '100%'}}>
+				
+                        <div className="box bg-2">
+                            <button className="button button--naira button--border-thick button--text-thick button--text-upper button--size-s">
+                            <Link className="btn my-3" to="/">
+                                <i className="button__icon icon icon-download"></i>
+                                <span>
+                                    Go Back
+                                </span>
+                            
+                            </Link>
+                            </button>
+                        </div>
+			        </section>
                       
                             {/* <a href={`/api/datas/${data._id}`} alt="" > */}
-                                
+                                <div className="flex-screen">
                                     <div className="screen">
                                         <div className="content">
                                             
@@ -65,16 +69,30 @@ const DAOScreen = ({ match }) => {
                                             
                                         </div>
                                     </div>
-                                
 
-                                <a href={`/api/datas/${data._id}`} alt="" >{data.Category}</a>
+                                    <div className="screen">
+                                        <div className="content">
+                                            
+                                            <a href={`/api/datas/${data._id}`} alt="" >${data.AUM}</a>
 
-                                <a href={`/api/datas/${data._id}`} alt="" >${data.AUM}</a>
+                                            <a href={`/api/datas/${data._id}`} alt="" >{data.Followers}</a>
+                                            
+                                        </div>
+                                    </div>
 
-                                <a href={`/api/datas/${data._id}`} alt="" >{data.Followers}</a>
+                                    <div className="screen">
+                                        <div className="content">
+                                            
+                                            <a href={`/api/datas/${data._id}`} alt="" >${data.AUM}</a>
 
-                                <a href={`/api/datas/${data._id}`} alt="" >{data.Founded}</a>
-                            {/* </a> */}
+                                            <a href={`/api/datas/${data._id}`} alt="" >{data.Followers}</a>
+
+                                            <a href={`/api/datas/${data._id}`} alt="" >{data.Founded}</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
                                                             
                                 <a href={data.Website} target="_blank" rel="noreferrer" alt="twitter" style={{width: '30px', height: '100px', color: "white"}}>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 hover:text-yellow-600">
@@ -93,7 +111,7 @@ const DAOScreen = ({ match }) => {
                                 </a>
                                 
                             
-                                        
+{/*                                         
                     
                         <div className="screen">
                             <div className="content">
@@ -104,7 +122,7 @@ const DAOScreen = ({ match }) => {
                             <div className="content">
                                 <h2>New York</h2>
                             </div>
-                        </div>
+                        </div> */}
                 </>
             )}
         </>
